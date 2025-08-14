@@ -38,8 +38,8 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: |
-            ghcr.io/${{ github.repository_owner }}/twogougai:html  # 在此处修改镜像名称
+          tags: |  # 在此处修改镜像名称
+            ghcr.io/${{ github.repository_owner }}/twogougai:html
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.description=Websocket Server
